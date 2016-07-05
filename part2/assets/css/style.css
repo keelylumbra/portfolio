@@ -7,8 +7,8 @@ a {
 	text-decoration: none;
 }
 aside {
-	display: inline;
 	width: 150px;
+	display: inline-block;
 }
 body {
 	background-image: url("../images/dark-blue-silk.jpg");
@@ -33,10 +33,9 @@ nav {
 	width: 100%;
 }
 section {
-	display: inline;
-	float: left;
 	padding-bottom: 15px;
 	width: 50%;
+	float: left;
 }
 .about-me img {
 	float: right;
@@ -45,9 +44,7 @@ section {
 .clearfix {
 	overflow: auto;
 }
-.connect img {
-	margin: 7px;
-}
+
 .container {
 	width: 100%;
 }
@@ -63,9 +60,29 @@ section {
 
 
 @media only screen and (max-width: 768px) {
-	/* Add your code here */
+	section {
+	padding-bottom: 15px;
+	width: 100%;
+}
+	aside {
+	width: 150px;
+	margin: auto;
+	display: block;
+}
+	.content-wrapper {
+	background-color: #0000FF;
+}
+
+
 }
 
 @media only screen and (max-width: 640px) {
-	/* Add your code here */
+	.content-wrapper {
+		background-color: #008000;
+	}
+
+	.about-me img {
+		width: 100%;
+	}
+
 }
