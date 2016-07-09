@@ -227,21 +227,6 @@ hr.small {
     margin: 10px;
 }
 
-/* Map */
-
-.map {
-    height: 500px;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-}
-
-.map iframe {
-    pointer-events: none;
-}
 
 /* Footer */
 
@@ -255,5 +240,21 @@ footer {
   bottom: 5px;
   right: 5px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .fiesta {
+        float: none;
+    }
+
+    #services {
+        background-color: #7CFC00;
+    }
+
+    #poem {
+        font-family: 'Permanent Marker', cursive;
+    }
+}
+
 
 
